@@ -111,15 +111,15 @@
   .jtbd-row .job em { font-family: var(--serif); font-style: italic; color: var(--muted); }
 
   /* Loop diagram: Trigger → Action → Reward → Return */
-  .loop { display: grid; grid-template-columns: repeat(4, 1fr) 32px; align-items: stretch; gap: 0; margin: 24px 0 20px; }
+  .loop { display: grid; grid-template-columns: 1fr 32px 1fr 32px 1fr 32px 1fr; align-items: stretch; gap: 0; margin: 24px 0 20px; }
   .loop-step { background: var(--paper-2); border-right: 1px solid white; padding: 18px 18px 20px 22px; font-size: 12.5px; line-height: 1.5; position: relative; }
   .loop-step:first-child { border-radius: 4px 0 0 4px; }
-  .loop-step:nth-child(4) { background: var(--ink); color: var(--paper); }
-  .loop-step:nth-child(4) .kicker { color: var(--accent); }
+  .loop-step:nth-child(7) { background: var(--ink); color: var(--paper); }
+  .loop-step:nth-child(7) .kicker { color: var(--accent); }
   .loop-step .kicker { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
   .loop-step .what { font-weight: 700; font-size: 13.5px; margin-bottom: 4px; }
   .loop-step .why { color: var(--muted); }
-  .loop-step:nth-child(4) .why { color: #c8c8c3; }
+  .loop-step:nth-child(7) .why { color: #c8c8c3; }
   .loop-arrow { display: flex; align-items: center; justify-content: center; background: var(--paper); font-size: 22px; color: var(--ink); font-weight: 800; }
   .loop-note { font-family: var(--serif); font-style: italic; font-size: 13.5px; color: var(--muted); border-top: 1px dashed var(--line); border-bottom: 1px dashed var(--line); padding: 12px 0; text-align: center; margin: 12px 0 8px; }
 
