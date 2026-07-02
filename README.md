@@ -1,5 +1,7 @@
 # Product Teardown Skill
 
+> **English** · [中文](README_zh.md)
+
 A Principal-PM-level product-teardown skill that reverse-engineers any product as a system — loops, strategy, moat, opportunities — and renders the analysis as a bilingual (EN + 中文), print-ready HTML report with an embedded product-screenshot gallery.
 
 **Two-step flow:**
@@ -35,4 +37,4 @@ Sample: Linear teardown — [`product-teardown-linear-en-202607.html`] + `-zh-` 
 
 ---
 
-Built by [Yan Liu](https://yanliudesign.live) · [X](https://x.com/yanliudreamer) · [LinkedIn](https://www.linkedin.com/in/yanliudreamer/)
+Built by [Yan Liu](https://yanliudesign.live) · [LinkedIn](https://www.linkedin.com/in/yanliudesign/) · [X](https://x.com/yanliudreamer) · [Xiaohongshu · Dreameryanyan](https://www.xiaohongshu.com/user/profile/5b2afdf311be104ac3c22931)
