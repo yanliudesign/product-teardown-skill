@@ -52,20 +52,30 @@ Represent it as a flow: **Trigger → Action → Reward → Return loop**
 - Information architecture logic
 - Navigation and interaction model
 
-### 5. Value Delivery & UX Quality
+### 5. Design Language & Craft Signals
+Name the concrete engineering / design decisions that give this product its "quality" feel. Not vague adjectives — a copyable pattern language.
+- 5 specific craft patterns (sync engine? typography system? command bar? motion rules? silence-vs-notification stance?)
+- For each: what it is + why it matters + who else fails to do it
+
+### 6. Value Delivery & UX Quality
 - Time-to-value (how fast users get benefit)
 - Cognitive load (low/medium/high)
 - Key delight moments
 - Trust-building mechanisms
 - Where users likely struggle
 
-### 6. Business Model & Monetization
+### 7. Business Model & Monetization
 - Revenue model
 - Monetization entry points
 - Free vs paid value boundary
 - Alignment between UX and monetization
 
-### 7. Growth Strategy (Explicit or Inferred)
+### 8. Competitor Landscape
+Name 3–5 real rivals. Score each vs the target product on 4 concrete dimensions (philosophy, speed & craft, non-core-audience fit, AI depth). One row per dimension in a real matrix. End with:
+- Where the product still wins
+- Where rivals are catching up (with names)
+
+### 9. Growth Strategy (Explicit or Inferred)
 - Likely acquisition channels
 - Growth loops (PLG, social, SEO, enterprise, etc.)
 - Expansion vectors:
@@ -73,13 +83,20 @@ Represent it as a flow: **Trigger → Action → Reward → Return loop**
   - Vertical expansion (deeper workflows)
   - Platform expansion (ecosystem, AI, APIs)
 
-### 8. AI / Future Readiness (if applicable)
+### 10. AI / Future Readiness (if applicable)
 - How AI is currently used (assistive / embedded / autonomous)
 - Opportunities for deeper AI integration
 - What parts could be automated or agentified
 - Strategic risk from AI disruption
 
-### 9. Friction & Weaknesses (Critical PM Lens)
+### 11. What Metrics They Actually Optimize For
+They don't publish OKRs — you infer them from the product. Give:
+- 1 North Star metric (why it's the right unit of value, not a vanity number)
+- 3 input metrics that lead the north star
+- 1 guardrail (the thing they defend against every new feature)
+- 1 metric blindspot (what they refuse to look at — and what it costs them)
+
+### 12. Friction & Weaknesses (Critical PM Lens)
 - UX friction points
 - Missing or weak loops
 - Retention risks
@@ -88,7 +105,10 @@ Represent it as a flow: **Trigger → Action → Reward → Return loop**
 
 Be explicit and opinionated.
 
-### 10. Opportunities & Redesign Ideas
+### 13. Risk Matrix
+4 concrete risks. Each row: name · category (competitive / market / technical / growth / regulatory) · severity (high/med/low) · likelihood (with time window) · specific mitigation the team should ship.
+
+### 14. Opportunities & Redesign Ideas
 Provide:
 - 3 product improvement opportunities
 - 1 high-impact strategic shift
@@ -96,7 +116,7 @@ Provide:
 
 Focus on actionable PM thinking, not generic suggestions.
 
-### 11. Final PM Verdict
+### 15. Final PM Verdict
 End with a sharp synthesis:
 - Why the product wins
 - Where it breaks
@@ -121,7 +141,7 @@ If the product is AI-native or platform-based:
 ## Delivery flow (2 steps, don't skip)
 
 ### Step 1 · Deliver the teardown in chat
-Produce the full 11-section analysis in chat, in order.
+Produce the full 15-section analysis in chat, in order.
 
 ### Step 2 · Generate a bilingual HTML report and open it
 After the chat response, without asking permission:

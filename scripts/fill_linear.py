@@ -189,6 +189,102 @@ V_EN = {
     "SHOT_4_CAPTION": "Build — native surface for Codex, Cursor, Copilot agents.",
     "SHOT_5_CAPTION": "Diffs — structural PR review inside Linear.",
     "SHOT_6_CAPTION": "Monitor — Pulse, insights, cycle-time by agent.",
+
+    # ----- §5 Craft signals -----
+    "CRAFT_PRINCIPLE":
+        "'Linear-quality' is not a vague taste — it's a pattern language of concrete engineering decisions you can name and copy. Here are the five that most define the product.",
+    "CRAFT_1_NAME": "Sub-100ms optimistic UI on a custom sync engine",
+    "CRAFT_1_DETAIL": "Every click renders before the server confirms. The bespoke sync engine is the deep moat — most competitors are still fighting HTTP round-trips and reveal their latency in every state change.",
+    "CRAFT_2_NAME": "One primitive per surface: the command bar",
+    "CRAFT_2_DETAIL": "⌘K is not a shortcut menu, it's the entire verb layer. No dropdowns, no right-click menus. If an action isn't in ⌘K, they refused to ship it — that's the discipline.",
+    "CRAFT_3_NAME": "Typography as UI hierarchy",
+    "CRAFT_3_DETAIL": "3–4 weights of one geometric sans, tight tracking, precise line-height. Status is a text label, not a colored icon — the type does the work of information design.",
+    "CRAFT_4_NAME": "Motion as feedback, never decoration",
+    "CRAFT_4_DETAIL": "Every micro-animation has a job: transition confirms an optimistic action; drawer slide preserves list context; state changes feel physical. Nothing spins without a reason.",
+    "CRAFT_5_NAME": "Silence over notification",
+    "CRAFT_5_DETAIL": "No unread badge on the tab; no red dot by default. Inbox is a place you go, not something that pushes at you. The product's most opinionated stance: it refuses to interrupt you.",
+
+    # ----- §8 Competitor landscape -----
+    "COMP_INTRO":
+        "Four rivals worth naming. Only one — Height — is aimed at the exact 'AI-native tracker' pivot Linear must make. The others compete on a different axis (breadth, docs, or non-eng fit) and are dangerous mostly at the boundary.",
+    "COMP_1_NAME": "Jira",
+    "COMP_2_NAME": "Notion",
+    "COMP_3_NAME": "Asana",
+    "COMP_4_NAME": "Height",
+    "COMP_DIM_1": "Philosophy",
+    "COMP_DIM_2": "Speed & craft",
+    "COMP_DIM_3": "Non-eng team fit",
+    "COMP_DIM_4": "AI depth (2026)",
+    "COMP_OWN_D1": "Opinionated, eng-first, taste-driven",
+    "COMP_1_D1":   "Maximally configurable — every workflow is possible, none is delightful",
+    "COMP_2_D1":   "Docs-first canvas; everything is a block, tracking is optional",
+    "COMP_3_D1":   "Task management for anyone; rules-heavy automations",
+    "COMP_4_D1":   "AI-native rebuild; chat is the primary interface, not a bolt-on",
+    "COMP_OWN_D2": "Class-leading — sub-100ms sync, keyboard-first, custom sync engine",
+    "COMP_1_D2":   "Slow legacy React app; page loads visible to the human eye",
+    "COMP_2_D2":   "Beautiful but the block model creates lag at scale",
+    "COMP_3_D2":   "Functional; no visible taste story",
+    "COMP_4_D2":   "Fast, Linear-inspired; less polished on edge cases",
+    "COMP_OWN_D3": "Weak — marketing / ops still end up on Notion or Asana",
+    "COMP_1_D3":   "Ubiquitous but actively hated by non-engineers",
+    "COMP_2_D3":   "Strong — the default for cross-functional and non-eng teams",
+    "COMP_3_D3":   "Strong — built cross-functional from day one",
+    "COMP_4_D3":   "Weak — same eng-first opinionation as Linear",
+    "COMP_OWN_D4": "Additive: auto-title, similar issues, Ask Linear",
+    "COMP_1_D4":   "Additive: Atlassian Intelligence summaries + suggestions",
+    "COMP_2_D4":   "Deep: Notion AI writes, queries, and reasons across the DB",
+    "COMP_3_D4":   "Additive: task summaries, status roll-ups",
+    "COMP_4_D4":   "Native: AI does triage, categorization, and follow-ups autonomously",
+    "COMP_WHERE_OWN_WINS":
+        "Craft-driven speed and the founder-evangelism loop. Jira / Asana can't shed their legacy; Notion isn't built for engineering throughput; Height is smaller and less funded than Linear.",
+    "COMP_WHERE_RIVALS_CATCH":
+        "Height's autonomous triage is a direct threat in the next 24 months. Notion is quietly winning the non-engineering team layer that Linear needs if it wants a Notion-scale valuation.",
+
+    # ----- §11 Metrics they optimize for -----
+    "METRICS_INTRO":
+        "Linear doesn't publish its OKRs. But you can read the metric stack right off the product: what they measure, what they protect, and — most tellingly — what they refuse to look at.",
+    "NORTH_STAR_METRIC": "Weekly Active Teams (≥3 members × ≥5 issues completed)",
+    "NORTH_STAR_WHY":
+        "Not seat count (vanity) and not MAU (too loose). A team with real, sustained activity is the atomic unit of value — and the strongest predictor of paid conversion + retention in this category.",
+    "INPUT_METRIC_1_NAME": "Issue-creation latency (⌘K → server-confirmed)",
+    "INPUT_METRIC_1_WHY":
+        "The single quantitative expression of Linear's entire philosophy. If this metric degrades, the whole craft promise breaks — so it gets defended at the platform layer.",
+    "INPUT_METRIC_2_NAME": "Cycle completion rate per team",
+    "INPUT_METRIC_2_WHY":
+        "Proves the 'rhythm' primitive is actually working. Teams that finish their cycle re-enter the tool next week; teams that don't churn quietly.",
+    "INPUT_METRIC_3_NAME": "Time-to-second-workspace (alumni loop signal)",
+    "INPUT_METRIC_3_WHY":
+        "When an engineer installs Linear at their new company, a new org shows up. This loop outperforms any paid channel — measuring it is how you protect it.",
+    "GUARDRAIL_METRIC": "Time-to-first-issue for new members (activation ceiling)",
+    "GUARDRAIL_WHY":
+        "If this crosses ~90 seconds, the product is quietly failing new joiners. Linear defends this against every new feature — feature X ships only if it doesn't move TTFI.",
+    "METRIC_BLINDSPOT": "Non-engineering team activation rate",
+    "METRIC_BLINDSPOT_WHY":
+        "Almost certainly not on the top-line dashboard — which is exactly why marketing / ops penetration stays weak. What you don't measure, you don't win.",
+
+    # ----- §13 Risk matrix -----
+    "RISK_INTRO":
+        "Four risks worth calling out, ordered by severity. Each includes the leading indicator to watch and the concrete mitigation Linear should ship.",
+    "RISK_1_NAME": "AI-native competitor reframes tracking as chat",
+    "RISK_1_CAT": "Competitive",
+    "RISK_1_SEV": "High", "RISK_1_SEV_CLASS": "high",
+    "RISK_1_LIK": "High · next 24 mo",
+    "RISK_1_MIT": "Ship autonomous triage, spec drafting, and 'issue → agent' as first-class flows before Height (or a bigger fast-follower) reaches parity.",
+    "RISK_2_NAME": "Opinionation ceiling caps enterprise TAM",
+    "RISK_2_CAT": "Market",
+    "RISK_2_SEV": "High", "RISK_2_SEV_CLASS": "high",
+    "RISK_2_LIK": "Certain · ongoing",
+    "RISK_2_MIT": "Introduce per-team configurable primitives without breaking the default. Reach parity with Jira on SSO / audit / permissions inside 2 quarters.",
+    "RISK_3_NAME": "Sync-engine debt as the data model grows",
+    "RISK_3_CAT": "Technical",
+    "RISK_3_SEV": "Medium", "RISK_3_SEV_CLASS": "med",
+    "RISK_3_LIK": "Medium · 18 mo",
+    "RISK_3_MIT": "Invest in sync-engine v2; hold the sub-100ms invariant even as entities multiply (Docs, Insights, agents).",
+    "RISK_4_NAME": "Founder-evangelism loop plateaus",
+    "RISK_4_CAT": "Growth",
+    "RISK_4_SEV": "Medium", "RISK_4_SEV_CLASS": "med",
+    "RISK_4_LIK": "Medium · 12–24 mo",
+    "RISK_4_MIT": "Build a second, non-founder-dependent loop — most likely 'AI agent installs Linear on your behalf' or partner-bundled (Vercel, Cursor).",
 }
 
 # ---------- Chinese content ----------
@@ -351,6 +447,102 @@ V_ZH = {
     "SHOT_4_CAPTION": "Build —— 为 Codex / Cursor / Copilot 等 AI 助手原生搭建的工作面。",
     "SHOT_5_CAPTION": "Diffs —— 在 Linear 内部直接看结构化的代码变更审阅。",
     "SHOT_6_CAPTION": "Monitor —— Pulse 周报、洞察、按 AI 助手拆分的开发周期时长。",
+
+    # ----- §5 Craft signals -----
+    "CRAFT_PRINCIPLE":
+        "「Linear 级别的品味」不是一种模糊的审美，而是可以逐条数出来的具体工程决策。以下是它整套设计语言里最能定义产品的五条 —— 每一条都可以被复制，但很少有对手真正做到。",
+    "CRAFT_1_NAME": "亚 100 毫秒的乐观界面 + 自研同步引擎",
+    "CRAFT_1_DETAIL": "每一次点击都在服务器确认前先渲染。自研的同步引擎是深层护城河 —— 大多数竞品还在被 HTTP 往返卡脖子，每一次状态变化都在暴露自己的延迟。",
+    "CRAFT_2_NAME": "每个界面只有一个主控件：命令面板",
+    "CRAFT_2_DETAIL": "⌘K 不是快捷菜单，是整个「动词层」。没有下拉，没有右键菜单。⌘K 里没有的操作，他们就拒绝上线 —— 这就是纪律。",
+    "CRAFT_3_NAME": "字体本身就是信息层级",
+    "CRAFT_3_DETAIL": "一套几何无衬线字体的 3–4 个字重、极紧的字距、精准的行高。状态是一段文字标签，不是彩色图标 —— 字体本身承担了信息设计的活。",
+    "CRAFT_4_NAME": "动效只作反馈，从不作装饰",
+    "CRAFT_4_DETAIL": "每一个微动效都有职责：动画确认了乐观操作、抽屉滑入保留了列表上下文、状态切换有物理感。从不为「炫」而转。",
+    "CRAFT_5_NAME": "沉默优先于通知",
+    "CRAFT_5_DETAIL": "页签上没有未读数字、默认没有红点。收件箱是「你主动去看」，不是「它主动向你推」。这是 Linear 最有观点的一条立场：拒绝打扰你。",
+
+    # ----- §8 Competitor landscape -----
+    "COMP_INTRO":
+        "四个值得单独点名的对手。只有 Height 一家在瞄准 Linear 必须完成的那次「AI 原生转型」；其他三家在不同的轴上竞争（宽度、文档、非工程团队），主要在边界处才形成威胁。",
+    "COMP_1_NAME": "Jira",
+    "COMP_2_NAME": "Notion",
+    "COMP_3_NAME": "Asana",
+    "COMP_4_NAME": "Height",
+    "COMP_DIM_1": "产品哲学",
+    "COMP_DIM_2": "速度与手艺",
+    "COMP_DIM_3": "非工程团队适配",
+    "COMP_DIM_4": "AI 深度（2026）",
+    "COMP_OWN_D1": "强观点、工程优先、品味驱动",
+    "COMP_1_D1":   "最大限度可配置 —— 什么流程都能做，没有一个做得让人愉悦",
+    "COMP_2_D1":   "文档优先的画布；万物皆积木，任务追踪只是可选项",
+    "COMP_3_D1":   "给所有人的任务管理；重规则、重自动化",
+    "COMP_4_D1":   "AI 原生重做；对话就是主界面，不是加装的",
+    "COMP_OWN_D2": "品类第一 —— 亚 100 毫秒同步、键盘优先、自研同步引擎",
+    "COMP_1_D2":   "老旧的 React 应用；页面加载慢到肉眼可见",
+    "COMP_2_D2":   "漂亮，但积木模型在规模上带来延迟",
+    "COMP_3_D2":   "可用；没有明显的手艺叙事",
+    "COMP_4_D2":   "快，明显借鉴 Linear；边缘场景还不够打磨",
+    "COMP_OWN_D3": "弱 —— 市场 / 运营团队最后还是跑到 Notion 或 Asana",
+    "COMP_1_D3":   "无处不在，但被非工程人员真心讨厌",
+    "COMP_2_D3":   "强 —— 跨职能与非工程团队的默认选择",
+    "COMP_3_D3":   "强 —— 从第一天就是跨职能",
+    "COMP_4_D3":   "弱 —— 和 Linear 一样是工程优先的强观点",
+    "COMP_OWN_D4": "加法：自动写标题、找相似任务、Ask Linear",
+    "COMP_1_D4":   "加法：Atlassian Intelligence 的总结 + 建议",
+    "COMP_2_D4":   "深：Notion AI 能跨数据库写作、查询、推理",
+    "COMP_3_D4":   "加法：任务总结、状态汇总",
+    "COMP_4_D4":   "原生：AI 自主做分诊、分类、跟进",
+    "COMP_WHERE_OWN_WINS":
+        "手艺驱动的速度 + 创始人自发传教的循环。Jira / Asana 甩不掉历史包袱；Notion 不是为工程吞吐量做的；Height 比 Linear 更小、融资也更少。",
+    "COMP_WHERE_RIVALS_CATCH":
+        "Height 的自主分诊是 Linear 未来 24 个月最直接的威胁。Notion 在悄悄赢下非工程团队这一层 —— 而这正是 Linear 想撑起 Notion 级别估值时必须拿下的。",
+
+    # ----- §11 Metrics they optimize for -----
+    "METRICS_INTRO":
+        "Linear 不公开 OKR。但你可以从产品本身读出他们的指标栈：他们衡量什么、保护什么、以及最能说明问题的 —— 他们拒绝去看什么。",
+    "NORTH_STAR_METRIC": "周活跃团队数（WAT）·≥3 人 × ≥5 任务完成",
+    "NORTH_STAR_WHY":
+        "不用席位数（那是虚荣指标）也不用月活（太宽松）。有真实持续活动的团队才是价值的最小单位 —— 也是本品类里付费转化和留存最强的领先信号。",
+    "INPUT_METRIC_1_NAME": "新建任务的延迟（⌘K 到服务器确认）",
+    "INPUT_METRIC_1_WHY":
+        "Linear 全部产品哲学最直接的一个量化表达。这一条退步，整个「品味承诺」立刻塌 —— 所以它被放在平台层重点守着。",
+    "INPUT_METRIC_2_NAME": "各团队的冲刺完成率",
+    "INPUT_METRIC_2_WHY":
+        "证明「节奏」这个基础设计是有效的。完成本周期的团队下周会再来；完不成的会悄悄流失。",
+    "INPUT_METRIC_3_NAME": "「第二次装 Linear」的时间（校友循环信号）",
+    "INPUT_METRIC_3_WHY":
+        "一个工程师跳槽后在新公司再装一次，Linear 就会看到一个新工作区。这个循环比任何付费渠道都强 —— 度量它，就是在保护它。",
+    "GUARDRAIL_METRIC": "新成员首次提任务用时（激活上限）",
+    "GUARDRAIL_WHY":
+        "一旦这个数字超过 ~90 秒，说明产品正在悄悄辜负新人。Linear 用这一条挡住每一个新功能 —— 只有不拖慢它的功能才被允许上线。",
+    "METRIC_BLINDSPOT": "非工程团队的激活率",
+    "METRIC_BLINDSPOT_WHY":
+        "几乎可以断定这条不在核心看板上 —— 这也恰恰是市场 / 运营渗透一直上不去的原因。你不看的指标，就赢不了。",
+
+    # ----- §13 Risk matrix -----
+    "RISK_INTRO":
+        "四条值得单独列出的风险，按严重程度排列。每一条都给出应该盯的领先指标，以及 Linear 应该落地的具体缓解动作。",
+    "RISK_1_NAME": "AI 原生对手把「记任务」重构成「跟 AI 说话」",
+    "RISK_1_CAT": "竞争",
+    "RISK_1_SEV": "高", "RISK_1_SEV_CLASS": "high",
+    "RISK_1_LIK": "高 · 24 个月内",
+    "RISK_1_MIT": "在 Height（或某个更大的快跟者）追平之前，先把自动分诊、需求描述起稿、「任务 → AI 助手」做成一等公民流程。",
+    "RISK_2_NAME": "「有观点」的天花板限制企业级市场",
+    "RISK_2_CAT": "市场",
+    "RISK_2_SEV": "高", "RISK_2_SEV_CLASS": "high",
+    "RISK_2_LIK": "已经在发生",
+    "RISK_2_MIT": "在不破坏默认体验的前提下，引入可按团队配置的基础项。两个季度内把单点登录 / 审计 / 权限做到与 Jira 平齐。",
+    "RISK_3_NAME": "数据模型变多后的同步引擎技术债",
+    "RISK_3_CAT": "技术",
+    "RISK_3_SEV": "中", "RISK_3_SEV_CLASS": "med",
+    "RISK_3_LIK": "中 · 18 个月内",
+    "RISK_3_MIT": "投资同步引擎 v2；即使实体数量变多（文档、洞察、AI 助手），也守住亚 100 毫秒这条不变量。",
+    "RISK_4_NAME": "创始人自发传教的增长循环开始见顶",
+    "RISK_4_CAT": "增长",
+    "RISK_4_SEV": "中", "RISK_4_SEV_CLASS": "med",
+    "RISK_4_LIK": "中 · 12–24 个月",
+    "RISK_4_MIT": "搭一条不依赖创始人的第二增长循环 —— 大概率是「AI 助手替你装 Linear」或「与 Vercel / Cursor 打包」。",
 }
 
 
