@@ -1,6 +1,6 @@
 <div align="center">
 
-[中文](./README_zh.md) · **English**
+[Chinese](./README_zh.md) · **English**
 
 # 🔬 Product Teardown Skill
 
@@ -20,16 +20,16 @@
 
 </div>
 
-A Principal-PM-level product-teardown skill. Point it at any product (Linear, Notion, Cursor, Perplexity…) and it reverse-engineers the thing as a *system* — loops, strategy, moat, opportunities — then renders the analysis as a bilingual (EN + 中文), print-ready HTML report with an embedded product-screenshot gallery. Not a "5 things I like about this app" review. A structural read of *why the product wins, where it leaks, and what the next move should be*.
+A Principal-PM-level product-teardown skill. Point it at any product (Linear, Notion, Cursor, Perplexity…) and it reverse-engineers the thing as a *system* — loops, strategy, moat, opportunities — then renders the analysis as a bilingual (EN + ZH), print-ready HTML report with an embedded product-screenshot gallery. Not a "5 things I like about this app" review. A structural read of *why the product wins, where it leaks, and what the next move should be*.
 
 ---
 
 ## How it works — just 2 steps
 
-Invoke the skill with anything like "teardown Linear" / "拆解 Notion" / "分析一下 Cursor" and it runs the same flow every time:
+Invoke the skill with anything like "teardown Linear" / "break down Notion" / "analyze Cursor" and it runs the same flow every time:
 
 1. **Chat response** — full teardown in 11 sections (Snapshot → Users & JTBD → Core Loop → Architecture → UX Quality → Business Model → Growth → AI Readiness → Friction → Opportunities → Final PM Verdict).
-2. **HTML report auto-generates** — two cross-linked files (EN + 中文, toggle in the bottom-right), saved to `~/Desktop/Claude skills/product-teardown-<slug>-{en,zh}-<yyyymm>.html`. Print-optimized (Cmd+P → clean PDF).
+2. **HTML report auto-generates** — two cross-linked files (EN + ZH, toggle in the bottom-right), saved to `~/Desktop/Claude skills/product-teardown-<slug>-{en,zh}-<yyyymm>.html`. Print-optimized (Cmd+P → clean PDF).
 
 ---
 
@@ -52,7 +52,7 @@ Every run ends with two single-file HTML reports at `~/Desktop/Claude skills/`. 
 | **10** | **Opportunities** | 3–5 concrete next-move bets (features, wedges, adjacencies). |
 | **11** | **Final PM Verdict** | The one sentence a Principal PM would write on the internal doc. |
 
-Reports are print-optimized (Cmd+P → clean PDF) and cross-linked EN ↔ 中文 via a bottom-right language switcher.
+Reports are print-optimized (Cmd+P → clean PDF) and cross-linked EN ↔ ZH via a bottom-right language switcher.
 
 ---
 
@@ -62,7 +62,7 @@ Reports are print-optimized (Cmd+P → clean PDF) and cross-linked EN ↔ 中文
 2. **Loops, not features.** The Core Loop section is the spine of the teardown — features are downstream of the loop.
 3. **AI placement is a spectrum, not a badge.** Assistive / Embedded / Autonomous — pick one and defend it with evidence.
 4. **Screenshots must come from the product itself.** Pull from `og:image` marketing assets (`curl -s <url> | grep og:image`), not random blog posts.
-5. **Bilingual by default.** Every teardown ships EN + 中文 in the same run, cross-linked. Not translated later.
+5. **Bilingual by default.** Every teardown ships EN + ZH in the same run, cross-linked. Not translated later.
 
 ---
 
@@ -106,7 +106,7 @@ macOS: `~/Library/Application Support/Code/User/prompts/`
 
 ## Example output
 
-Sample: Linear teardown — `product-teardown-linear-en-202607.html` + `-zh-` counterpart, cross-linked EN / 中文 switcher, 6-image product tour, 11-section deep dive.
+Sample: Linear teardown — `product-teardown-linear-en-202607.html` + `-zh-` counterpart, cross-linked EN / ZH switcher, 6-image product tour, 11-section deep dive.
 
 ---
 
