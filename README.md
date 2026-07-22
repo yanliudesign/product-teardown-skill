@@ -104,9 +104,23 @@ macOS: `~/Library/Application Support/Code/User/prompts/`
 
 ---
 
-## Example output
+## Example output · Linear teardown
 
-Sample: Linear teardown — `product-teardown-linear-en-202607.html` + `-zh-` counterpart, cross-linked EN / ZH switcher, 6-image product tour, 11-section deep dive.
+`product-teardown-linear-en-202607.html` + `-zh-` counterpart · cross-linked EN / ZH switcher · 6-image product tour · 11-section deep dive.
+
+<p align="center">
+  <img src="docs/screenshots/01-cover.png" alt="Cover — Linear · category, users, model, stage + 11-section table of contents" width="820" />
+</p>
+
+| TL;DR + key metrics | Users & JTBD | Core Product Loop |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/02-tldr.png" alt="If you only read three things + Time-to-value, Core loop frequency, Moat score" /> | <img src="docs/screenshots/03-users-jtbd.png" alt="Target users, trigger & context, functional/emotional/social JTBD" /> | <img src="docs/screenshots/04-core-loop.png" alt="Trigger → Action → Reward → Return loop + acquisition, retention, virality" /> |
+| **Competitor Landscape** | **AI / Future Readiness** | **Metrics · North Star + Guardrails** |
+| <img src="docs/screenshots/05-competitors.png" alt="Linear vs Jira / Notion / Asana / Height across philosophy, speed, non-eng fit, AI depth" /> | <img src="docs/screenshots/06-ai-readiness.png" alt="Assistive / Embedded / Autonomous spectrum + current usage + strategic AI risk" /> | <img src="docs/screenshots/07-metrics.png" alt="Weekly Active Teams (north star) + input metrics + guardrails + blindspots" /> |
+
+<p align="center">
+  <img src="docs/screenshots/08-opportunities.png" alt="Opportunities & Redesign — Agentic Triage Inbox, Program primitive as DAG, Executive Cockpit + strategic shift" width="820" />
+</p>
 
 ---
 
