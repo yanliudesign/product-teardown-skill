@@ -4,3 +4,4 @@ __pycache__/
 *.pyo
 .venv/
 .env
+docs/**/.DS_Store

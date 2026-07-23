@@ -104,9 +104,19 @@ macOS 路径：`~/Library/Application Support/Code/User/prompts/`
 
 ---
 
-## 示例输出
+## 示例输出 · Linear 拆解
 
-Linear 拆解样例 —— `product-teardown-linear-en-202607.html` + `-zh-` 对应版本，右下角 EN / 中文 互链切换，6 张产品截图导览，11 节深度拆解。
+`product-teardown-linear-en-202607.html` + `-zh-` 对应版本 · 右下角 EN / 中文 互链切换 · 6 张产品截图导览 · 11 节深度拆解。
+
+<p align="center">
+  <img src="docs/screenshots/cn/01-cover.png" alt="封面 —— Linear · 品类、用户、商业模式、阶段 + 15 节目录" width="820" />
+</p>
+
+| 核心结论 + 关键指标 | 目标用户 & JTBD | 核心产品循环 |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/cn/02-tldr.png" alt="只看三件事 + 首次价值时间 / 循环频率 / 护城河评分" /> | <img src="docs/screenshots/cn/03-users-jtbd.png" alt="目标用户、触发场景、功能 / 情感 / 社交 JTBD" /> | <img src="docs/screenshots/cn/04-core-loop.png" alt="触发 → 动作 → 奖励 → 回归 循环 + 获客 / 留存 / 病毒性" /> |
+| **竞品全景 & 定位** | **AI · 未来就绪度** | **他们真正在优化的指标** |
+| <img src="docs/screenshots/cn/05-competitors.png" alt="Linear vs Jira / Notion / Asana / Height：理念、速度、非工程适配、AI 深度" /> | <img src="docs/screenshots/cn/06-ai-readiness.png" alt="Assistive / Embedded / Autonomous 光谱 + 当前用法 + AI 战略风险" /> | <img src="docs/screenshots/cn/07-metrics.png" alt="Weekly Active Teams（北极星）+ 输入指标 + 护栏 + 盲区" /> |
 
 ---
 
